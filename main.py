@@ -21,7 +21,7 @@ def run(inputpath):
                 taxa_name = re.search(r'[A-Z][a-z]*', content[line]).group()
 
                 if re.search(r' [?0-9]+', content[line]) != None: 
-                    print re.search(r' [?0-9]+', content[line]).group()
+                    #print re.search(r' [?0-9]+', content[line]).group()
                     data_rows += re.search(r' [?0-9]+', content[line]).group()
 
             
