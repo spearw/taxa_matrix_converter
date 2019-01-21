@@ -1,24 +1,28 @@
-Takes .nex files and outputs .csv files.
+README for character matrix formatting.
 
-Put file you want to convert into input folder as 'input.nex'. Will not read file if not titled 'input' with a '.nex' extension. 
+Put files you want to convert into 'input' folder as plain txt files. Input should be linked characters. Currently it ignores spaces and newlines.
 
-Common problem - hidden txt. If program doesn't work it might be that the file is actually 'input.nex.txt'
+Run Program - follow directions to run shell script by double clicking (https://stackoverflow.com/questions/5125907/how-to-run-a-shell-script-in-os-x-by-double-clicking)
+1. In terminal at the character_matrix_format folder, type chmod a+x run.sh
+2. Then, in Finder, right-click your file and select "Open with" and then "Other...".
+3. Here you select the application you want the file to execute into, in this case it would be Terminal. To be able to select terminal you need to switch from "Recommended Applications" to "All Applications". (The Terminal.app application can be found in the Utilities folder)
+4. NOTE that unless you don't want to associate all files with this extension to be run in terminal you should not have "Always Open With" checked.
+5. After clicking OK you should be able to execute you script by simply double-clicking it.
 
-open terminal in folder. 
+Alternative Run Program - Type ruby main.rb in the character_matrix_format directory - this will only work if you have ruby installed.
 
-type 'python run.py'
+Should create 'output.csv' in the output folder. 
 
-should create 'output.csv' in the output folder. 
+WARNING: This will not check if the data is already there, so if you run the program twice you'll get duplicate data.
 
 Expected for standard nexus files. Will read data between Matrix and first ';' character. 
 
 Reads polymorphisms that start with {, (, and [. Will allow for 2 or more and format them as x&y&z etc. 
 
-
 Taxa name does not need to be on a seperate line from the rest of the data. 
 
 
-Format below:
+Modeled after format below:
 
 
 
