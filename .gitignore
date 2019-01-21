@@ -5,4 +5,4 @@ man
 pip-selfcheck.json
 test_main.py
 test_main.pyc
-input/.
+test_input_files
