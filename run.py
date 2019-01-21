@@ -1,9 +1,25 @@
 from main import run
-import re
-        
-result = run("input/input.nex")
+import glob
+import os
 
-f= open("output/taxa.csv","w")
 
-f.write(result)
-f.close
+path="input/"
+
+for filename in os.listdir(path):
+
+    if filename == ".DS_Store":
+        pass
+
+    else:
+
+        print filename
+        full_path = path + filename
+        print filename 
+
+
+        result = run(full_path)
+
+        f= open("output/taxa.csv","a")
+
+        f.write(result)
+        f.close
