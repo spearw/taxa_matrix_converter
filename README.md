@@ -9,7 +9,7 @@ Run Program - follow directions to run shell script by double clicking (https://
 4. NOTE that unless you don't want to associate all files with this extension to be run in terminal you should not have "Always Open With" checked.
 5. After clicking OK you should be able to execute you script by simply double-clicking it.
 
-Alternative Run Program - Type ruby main.rb in the character_matrix_format directory - this will only work if you have ruby installed.
+Alternative Run Program - Type python run.py in the character_matrix_format directory - this will only work if you have python installed.
 
 Should create 'output.csv' in the output folder. 
 
